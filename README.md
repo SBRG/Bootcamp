@@ -22,7 +22,7 @@ The installation procedure will put the package into platform dependent location
 ### Download the bootcamp course material
 
 Go to the top of the repository page and press the ZIP button to download a a ZIP file of the course content. Unpack it 
-![ZIP](http://imgur.com/5NGgDAn.png)
+![ZIP](https://raw.github.com/SBRG/Bootcamp/master/img/5NGgDAn.png)
 
 You can also clone it to your favorite location
 
@@ -33,11 +33,11 @@ if you are familiar with [git].
 ### Share your screen while asking questions
 You can share your screen using [screenleap]. Go to the [website][screenleap] and press the *Share your screen now!* button.
 
-![screenleap_button](http://imgur.com/3kcNtee.png)
+![screenleap_button](https://raw.github.com/SBRG/Bootcamp/master/img/3kcNtee.png)
 
 Once your screen is you will be provided with a URL and a 9 digit code that you can share.
 
-![screenleap_url](http://imgur.com/BDORvAM.png)
+![screenleap_url](https://raw.github.com/SBRG/Bootcamp/master/img/BDORvAM.png)
 
 
 
