@@ -2,7 +2,7 @@
 <!--![Boocamp](http://www.beyondfitnesswithlisa.com/wp-content/uploads/2012/12/bootcamp.jpg)-->
 
 ### Date and location
-The course will take place June 10, 1–5pm in the Zweifach in PFBH.
+The course will take place June 10, 1pm–5pm in the Zweifach library in PFBH.
 
 ### Prerequisites
 
