@@ -1,6 +1,12 @@
 # MASS Toolbox Bootcamp
 <!--![Boocamp](http://www.beyondfitnesswithlisa.com/wp-content/uploads/2012/12/bootcamp.jpg)-->
 
+### Material covered
+1h Mathematica essentials (functional programming, equations solving and manipulation, rule-based programming, ...)
+1h Toolbox design principles + model construction and manipulation
+1h Simulation & Visualization, IO (SBML, ...), COBRA capabilities
+1h Advanced topics: enzyme module construction, symbolic capabilities, thermodynamics, ...
+
 ### Date and location
 The course will take place June 10, 1pm–5pm in the Zweifach library in PFBH.
 
