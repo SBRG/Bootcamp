@@ -3,8 +3,11 @@
 
 ### Material covered
 1h Mathematica essentials (functional programming, equations solving and manipulation, rule-based programming, ...)
+
 1h Toolbox design principles + model construction and manipulation
+
 1h Simulation & Visualization, IO (SBML, ...), COBRA capabilities
+
 1h Advanced topics: enzyme module construction, symbolic capabilities, thermodynamics, ...
 
 ### Date and location
