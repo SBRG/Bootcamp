@@ -1,3 +1,22 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[    349569,       7585]
+NotebookOptionsPosition[    309195,       6718]
+NotebookOutlinePosition[    347657,       7523]
+CellTagsIndexPosition[    347614,       7520]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[{
  RowBox[{"<<", "Toolbox`"}], "\[IndentingNewLine]", 
@@ -228,7 +247,6 @@ Cell[BoxData[
                 GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{
                     GrayLevel[0.99], 
                     RGBColor[0.87, 0.94, 1]}}},
-                
                 GridBoxDividers->{
                  "Columns" -> {True, {}, True}, "Rows" -> {{True}}},
                 
@@ -2130,7 +2148,6 @@ Cell[BoxData[
                     GridBoxAlignment->{
                     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
                     "Rows" -> {{Center}}, "RowsIndexed" -> {}},
-                    
                     GridBoxItemSize->{
                     "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
                     Alignment->Left,
@@ -2504,7 +2521,8 @@ Cell[BoxData[
                Toolbox`rateconst["2", False] (
                 Toolbox`Keq["2"] Toolbox`metabolite["x2", None][Toolbox`t] - 
                 Toolbox`metabolite["x3", None][Toolbox`t])}, {
-               Toolbox`v["3"], Toolbox`Keq["3"] Toolbox`rateconst["3", False] 
+               Toolbox`v[
+               "3"], (Toolbox`Keq["3"] Toolbox`rateconst["3", False]) 
                Toolbox`metabolite["x3", None][Toolbox`t]}}, 
              Dividers -> {True, All}, Background -> {None, {{
                  GrayLevel[0.99], 
@@ -2512,8 +2530,8 @@ Cell[BoxData[
             12]}], {{800}, {450}}, Scrollbars -> {False, True}], "ODE" -> Pane[
         Style[
          Column[{Derivative[1][
-             Toolbox`metabolite["x1", None]][Toolbox`t] == -
-            Toolbox`rateconst["1", True] (
+             Toolbox`metabolite["x1", None]][
+            Toolbox`t] == (-Toolbox`rateconst["1", True]) (
              Toolbox`metabolite["x1", None][Toolbox`t] - 
              Toolbox`Keq["1"]^(-1) Toolbox`metabolite["x2", None][Toolbox`t]),
             Derivative[1][
@@ -2527,7 +2545,7 @@ Cell[BoxData[
              Toolbox`Keq["2"]^(-1) Toolbox`metabolite["x3", None][Toolbox`t]),
             Derivative[1][
              Toolbox`metabolite["x3", None]][
-            Toolbox`t] == -Toolbox`rateconst["3", True] 
+            Toolbox`t] == (-Toolbox`rateconst["3", True]) 
              Toolbox`metabolite["x3", None][Toolbox`t] + 
             Toolbox`rateconst["2", True] (
               Toolbox`metabolite["x2", None][Toolbox`t] - 
@@ -2636,329 +2654,6 @@ Cell[BoxData[
    ",", "\<\"Proteins\"\>", ",", "\<\"GeneAssociations\"\>", 
    ",", "\<\"ProteinAssociations\"\>", ",", "\<\"Enzymes\"\>"}], 
   "}"}]], "Output"]
-}, Open  ]],
-
-Cell["Visualize the model as a pathway", "Text",
- CellChangeTimes->{{3.573136143817665*^9, 3.57313616079845*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"visualizePathways", "[", 
-  RowBox[{"simpleModel", ",", 
-   RowBox[{"\"\<ReactionRenderingFunction\>\"", "\[Rule]", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"Disk", "[", 
-         RowBox[{"#", ",", ".2"}], "]"}], ",", "White", ",", 
-        RowBox[{"Text", "[", 
-         RowBox[{"#2", ",", "#1"}], "]"}]}], "}"}], "&"}], ")"}]}], ",", 
-   RowBox[{"\"\<MetaboliteRenderingFunction\>\"", "\[Rule]", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"EdgeForm", "[", "Black", "]"}], ",", "White", ",", 
-        RowBox[{"Rectangle", "[", 
-         RowBox[{
-          RowBox[{"#1", "-", ".2"}], ",", 
-          RowBox[{"#1", "+", ".2"}]}], "]"}], ",", 
-        RowBox[{"Text", "[", 
-         RowBox[{"#2", ",", "#1"}], "]"}]}], "}"}], "&"}], ")"}]}], ",", 
-   RowBox[{"PlotFunction", "\[Rule]", "GraphPlot"}], ",", 
-   RowBox[{"ImageSize", "\[Rule]", "800"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.572663610674871*^9, 3.572663614154352*^9}, {
-  3.573135863160667*^9, 3.573135960815165*^9}, {3.5731360005923223`*^9, 
-  3.573136126371459*^9}}],
-
-Cell[BoxData[
- GraphicsBox[
-  TagBox[{
-    {GrayLevel[0.5], Arrowheads[Small], 
-     ArrowBox[{{0., 8.081386590557086*^-10}, {1., 7.183454747161855*^-10}}, 
-      0.3], ArrowBox[{{1., 7.183454747161855*^-10}, {2., 
-      6.285522903766622*^-10}}, 0.3], 
-     ArrowBox[{{1., 7.183454747161855*^-10}, {0., 8.081386590557086*^-10}}, 
-      0.3], ArrowBox[{{2., 6.285522903766622*^-10}, {1., 
-      7.183454747161855*^-10}}, 0.3], 
-     ArrowBox[{{2., 6.285522903766622*^-10}, {3., 5.387591060371391*^-10}}, 
-      0.3], ArrowBox[{{3., 5.387591060371391*^-10}, {4., 
-      3.5917273735809267`*^-10}}, 0.3], 
-     ArrowBox[{{3., 5.387591060371391*^-10}, {2., 6.285522903766622*^-10}}, 
-      0.3], ArrowBox[{{4., 3.5917273735809267`*^-10}, {3., 
-      5.387591060371391*^-10}}, 0.3], 
-     ArrowBox[{{4., 3.5917273735809267`*^-10}, {5., 
-      1.7958636867904634`*^-10}}, 0.3], 
-     ArrowBox[{{5., 1.7958636867904634`*^-10}, {6., 0.}}, 0.3]}, 
-    {GrayLevel[0.5], Arrowheads[Small], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[1], EdgeForm[GrayLevel[0]], 
-        RectangleBox[{-0.2, -0.19999999919186134`}, \
-{0.2, 0.20000000080813868`}], InsetBox[
-         InterpretationBox[
-          StyleBox["x1",
-           StripOnInput->False,
-           ShowSyntaxStyles->False,
-           AutoSpacing->False,
-           ZeroWidthTimes->True,
-           LineColor->RGBColor[0, 0, 0],
-           FrontFaceColor->RGBColor[0, 0, 0],
-           BackFaceColor->RGBColor[0, 0, 0],
-           GraphicsColor->RGBColor[0, 0, 0],
-           FontColor->RGBColor[0, 0, 0]],
-          Toolbox`metabolite["x1", None],
-          Editable->False,
-          Selectable->False], {0., 8.081386590557086*^-10}]},
-       InterpretationBox[
-        StyleBox["x1", 
-         RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False, 
-         AutoSpacing -> False, ZeroWidthTimes -> True], 
-        Toolbox`metabolite["x1", None], Editable -> False, Selectable -> 
-        False]],
-      Annotation[#, 
-       Toolbox`metabolite["x1", None], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[{DiskBox[{1., 7.183454747161855*^-10}, 0.2], 
-        {GrayLevel[1], InsetBox[
-          InterpretationBox[
-           SubscriptBox[
-            StyleBox["v",
-             StripOnInput->False,
-             ShowSyntaxStyles->False,
-             AutoSpacing->False,
-             ZeroWidthTimes->True,
-             LineColor->RGBColor[0, 0, 0],
-             FrontFaceColor->RGBColor[0, 0, 0],
-             BackFaceColor->RGBColor[0, 0, 0],
-             GraphicsColor->RGBColor[0, 0, 0],
-             FontColor->RGBColor[0, 0, 0]], 
-            StyleBox["1",
-             StripOnInput->False,
-             ShowSyntaxStyles->False,
-             AutoSpacing->False,
-             ZeroWidthTimes->True,
-             LineColor->RGBColor[0, 0, 0],
-             FrontFaceColor->RGBColor[0, 0, 0],
-             BackFaceColor->RGBColor[0, 0, 0],
-             GraphicsColor->RGBColor[0, 0, 0],
-             FontColor->RGBColor[0, 0, 0]]],
-           Toolbox`v["1"],
-           Editable->False,
-           Selectable->False], {1., 7.183454747161855*^-10}]}},
-       InterpretationBox[
-        SubscriptBox[
-         StyleBox["v", 
-          RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False,
-           AutoSpacing -> False, ZeroWidthTimes -> True], 
-         StyleBox["1", 
-          RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False,
-           AutoSpacing -> False, ZeroWidthTimes -> True]], 
-        Toolbox`v["1"], Selectable -> False, Editable -> False]],
-      Annotation[#, 
-       Toolbox`v["1"], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[1], EdgeForm[GrayLevel[0]], 
-        RectangleBox[{1.8, -0.19999999937144772`}, {2.2, 0.2000000006285523}],
-         InsetBox[
-         InterpretationBox[
-          StyleBox["x2",
-           StripOnInput->False,
-           ShowSyntaxStyles->False,
-           AutoSpacing->False,
-           ZeroWidthTimes->True,
-           LineColor->RGBColor[0, 0, 0],
-           FrontFaceColor->RGBColor[0, 0, 0],
-           BackFaceColor->RGBColor[0, 0, 0],
-           GraphicsColor->RGBColor[0, 0, 0],
-           FontColor->RGBColor[0, 0, 0]],
-          Toolbox`metabolite["x2", None],
-          Editable->False,
-          Selectable->False], {2., 6.285522903766622*^-10}]},
-       InterpretationBox[
-        StyleBox["x2", 
-         RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False, 
-         AutoSpacing -> False, ZeroWidthTimes -> True], 
-        Toolbox`metabolite["x2", None], Editable -> False, Selectable -> 
-        False]],
-      Annotation[#, 
-       Toolbox`metabolite["x2", None], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[{DiskBox[{3., 5.387591060371391*^-10}, 0.2], 
-        {GrayLevel[1], InsetBox[
-          InterpretationBox[
-           SubscriptBox[
-            StyleBox["v",
-             StripOnInput->False,
-             ShowSyntaxStyles->False,
-             AutoSpacing->False,
-             ZeroWidthTimes->True,
-             LineColor->RGBColor[0, 0, 0],
-             FrontFaceColor->RGBColor[0, 0, 0],
-             BackFaceColor->RGBColor[0, 0, 0],
-             GraphicsColor->RGBColor[0, 0, 0],
-             FontColor->RGBColor[0, 0, 0]], 
-            StyleBox["2",
-             StripOnInput->False,
-             ShowSyntaxStyles->False,
-             AutoSpacing->False,
-             ZeroWidthTimes->True,
-             LineColor->RGBColor[0, 0, 0],
-             FrontFaceColor->RGBColor[0, 0, 0],
-             BackFaceColor->RGBColor[0, 0, 0],
-             GraphicsColor->RGBColor[0, 0, 0],
-             FontColor->RGBColor[0, 0, 0]]],
-           Toolbox`v["2"],
-           Editable->False,
-           Selectable->False], {3., 5.387591060371391*^-10}]}},
-       InterpretationBox[
-        SubscriptBox[
-         StyleBox["v", 
-          RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False,
-           AutoSpacing -> False, ZeroWidthTimes -> True], 
-         StyleBox["2", 
-          RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False,
-           AutoSpacing -> False, ZeroWidthTimes -> True]], 
-        Toolbox`v["2"], Selectable -> False, Editable -> False]],
-      Annotation[#, 
-       Toolbox`v["2"], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[1], EdgeForm[GrayLevel[0]], 
-        RectangleBox[{3.8, -0.19999999964082726`}, \
-{4.2, 0.20000000035917276`}], InsetBox[
-         InterpretationBox[
-          StyleBox["x3",
-           StripOnInput->False,
-           ShowSyntaxStyles->False,
-           AutoSpacing->False,
-           ZeroWidthTimes->True,
-           LineColor->RGBColor[0, 0, 0],
-           FrontFaceColor->RGBColor[0, 0, 0],
-           BackFaceColor->RGBColor[0, 0, 0],
-           GraphicsColor->RGBColor[0, 0, 0],
-           FontColor->RGBColor[0, 0, 0]],
-          Toolbox`metabolite["x3", None],
-          Editable->False,
-          Selectable->False], {4., 3.5917273735809267`*^-10}]},
-       InterpretationBox[
-        StyleBox["x3", 
-         RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False, 
-         AutoSpacing -> False, ZeroWidthTimes -> True], 
-        Toolbox`metabolite["x3", None], Editable -> False, Selectable -> 
-        False]],
-      Annotation[#, 
-       Toolbox`metabolite["x3", None], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[{DiskBox[{5., 1.7958636867904634`*^-10}, 0.2], 
-        {GrayLevel[1], InsetBox[
-          InterpretationBox[
-           SubscriptBox[
-            StyleBox["v",
-             StripOnInput->False,
-             ShowSyntaxStyles->False,
-             AutoSpacing->False,
-             ZeroWidthTimes->True,
-             LineColor->RGBColor[0, 0, 0],
-             FrontFaceColor->RGBColor[0, 0, 0],
-             BackFaceColor->RGBColor[0, 0, 0],
-             GraphicsColor->RGBColor[0, 0, 0],
-             FontColor->RGBColor[0, 0, 0]], 
-            StyleBox["3",
-             StripOnInput->False,
-             ShowSyntaxStyles->False,
-             AutoSpacing->False,
-             ZeroWidthTimes->True,
-             LineColor->RGBColor[0, 0, 0],
-             FrontFaceColor->RGBColor[0, 0, 0],
-             BackFaceColor->RGBColor[0, 0, 0],
-             GraphicsColor->RGBColor[0, 0, 0],
-             FontColor->RGBColor[0, 0, 0]]],
-           Toolbox`v["3"],
-           Editable->False,
-           Selectable->False], {5., 1.7958636867904634`*^-10}]}},
-       InterpretationBox[
-        SubscriptBox[
-         StyleBox["v", 
-          RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False,
-           AutoSpacing -> False, ZeroWidthTimes -> True], 
-         StyleBox["3", 
-          RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False,
-           AutoSpacing -> False, ZeroWidthTimes -> True]], 
-        Toolbox`v["3"], Selectable -> False, Editable -> False]],
-      Annotation[#, 
-       Toolbox`v["3"], "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[1], EdgeForm[GrayLevel[0]], 
-        RectangleBox[{5.8, -0.2}, {6.2, 0.2}], InsetBox[
-         InterpretationBox[
-          StyleBox["x4",
-           StripOnInput->False,
-           ShowSyntaxStyles->False,
-           AutoSpacing->False,
-           ZeroWidthTimes->True,
-           LineColor->RGBColor[0, 0, 0],
-           FrontFaceColor->RGBColor[0, 0, 0],
-           BackFaceColor->RGBColor[0, 0, 0],
-           GraphicsColor->RGBColor[0, 0, 0],
-           FontColor->RGBColor[0, 0, 0]],
-          Toolbox`metabolite["x4", None],
-          Editable->False,
-          Selectable->False], {6., 0.}]},
-       InterpretationBox[
-        StyleBox["x4", 
-         RGBColor[0, 0, 0], StripOnInput -> False, ShowSyntaxStyles -> False, 
-         AutoSpacing -> False, ZeroWidthTimes -> True], 
-        Toolbox`metabolite["x4", None], Editable -> False, Selectable -> 
-        False]],
-      Annotation[#, 
-       Toolbox`metabolite["x4", None], "Tooltip"]& ]}},
-   Annotation[#, 
-    VertexCoordinateRules -> {{0., 8.081386590557086*^-10}, {1., 
-     7.183454747161855*^-10}, {2., 6.285522903766622*^-10}, {3., 
-     5.387591060371391*^-10}, {4., 3.5917273735809267`*^-10}, {5., 
-     1.7958636867904634`*^-10}, {6., 0.}}]& ],
-  AlignmentPoint->Center,
-  AspectRatio->Automatic,
-  Axes->False,
-  AxesLabel->None,
-  AxesOrigin->Automatic,
-  AxesStyle->{},
-  Background->None,
-  BaseStyle->{},
-  BaselinePosition->Automatic,
-  ColorOutput->Automatic,
-  ContentSelectable->Automatic,
-  CoordinatesToolOptions:>Automatic,
-  DisplayFunction:>$DisplayFunction,
-  Epilog->{},
-  FormatType:>TraditionalForm,
-  Frame->False,
-  FrameLabel->None,
-  FrameStyle->{},
-  FrameTicks->None,
-  FrameTicksStyle->{},
-  GridLines->None,
-  GridLinesStyle->{},
-  ImageMargins->0.,
-  ImagePadding->All,
-  ImageSize->800,
-  ImageSizeRaw->Automatic,
-  LabelStyle->{},
-  PlotLabel->None,
-  PlotRange->All,
-  PlotRangeClipping->False,
-  PlotRangePadding->Scaled[0.1],
-  PlotRegion->Automatic,
-  PreserveImageOptions->Automatic,
-  Prolog->{},
-  RotateLabel->True,
-  Ticks->Automatic,
-  TicksStyle->{}]], "Output"]
 }, Open  ]],
 
 Cell["Introspect a few model attributes in more detail", "Text",
@@ -4472,11 +4167,11 @@ Cell[BoxData[
       TableForm[{{-Toolbox`rateconst["1", True], Toolbox`Keq["1"]^(-1) 
          Toolbox`rateconst["1", True], 0, 0}, {
          Toolbox`rateconst[
-         "1", True], -Toolbox`Keq["1"]^(-1) Toolbox`rateconst["1", True] - 
+         "1", True], ((-1)/Toolbox`Keq["1"]) Toolbox`rateconst["1", True] - 
          Toolbox`rateconst["2", True], Toolbox`Keq["2"]^(-1) 
          Toolbox`rateconst["2", True], 0}, {0, 
          Toolbox`rateconst[
-         "2", True], -Toolbox`Keq["2"]^(-1) Toolbox`rateconst["2", True] - 
+         "2", True], ((-1)/Toolbox`Keq["2"]) Toolbox`rateconst["2", True] - 
          Toolbox`rateconst["3", True], 0}, {0, 0, 
          Toolbox`rateconst["3", True], 0}}], 
       TableForm[{
@@ -4484,12 +4179,11 @@ Cell[BoxData[
         Toolbox`metabolite["x2", None]^(-1) Toolbox`metabolite["x3", None], 
         Toolbox`metabolite["x3", None]^(-1) Toolbox`metabolite["x4", None]}], 
       
-      TableForm[{
-       Toolbox`Keq["1"]^(-1) Toolbox`metabolite["x1", None]^(-1) 
-        Toolbox`metabolite["x2", None], Toolbox`Keq["2"]^(-1) 
-        Toolbox`metabolite["x2", None]^(-1) Toolbox`metabolite["x3", None], 
-        Toolbox`Keq["3"]^(-1) Toolbox`metabolite["x3", None]^(-1) 
-        Toolbox`metabolite["x4", None]}]}]],
+      TableForm[{(Toolbox`Keq["1"]^(-1)/Toolbox`metabolite["x1", None]) 
+        Toolbox`metabolite["x2", None], (Toolbox`Keq["2"]^(-1)/
+         Toolbox`metabolite["x2", None]) 
+        Toolbox`metabolite["x3", None], (Toolbox`Keq["3"]^(-1)/
+         Toolbox`metabolite["x3", None]) Toolbox`metabolite["x4", None]}]}]],
    DynamicModuleValues:>{}],
   Setting[#, {0}]& ]], "Output"]
 }, Open  ]],
@@ -6983,8 +6677,43 @@ $CellContext`fluxProfile$67971} =
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output"]
-}, {2}]]
+  Manipulate`InterpretManipulate[1]]], "Output"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Toolbox", "::", "badargs"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"There is no definition for '\[NoBreak]\\!\\(simulate\\)\
+\[NoBreak]' applicable to \[NoBreak]\\!\\(simulate[\\(\\(simpleModel, \
+\\(\\({t, 0, 10000000000}\\)\\), \\(\\(InitialConditions \[Rule] \
+\\(\\({\\(\\(\\*InterpretationBox[StyleBox[\\\"x1\\\", RGBColor[0, 0, 0], \
+Rule[StripOnInput, False], Rule[ShowSyntaxStyles, False], Rule[AutoSpacing, \
+False], Rule[ZeroWidthTimes, True]], metabolite[\\\"x1\\\", None], \
+Rule[Editable, False], Rule[Selectable, False]] \[Rule] 1\\)\\), \
+\\(\\(\\*InterpretationBox[StyleBox[\\\"x2\\\", RGBColor[0, 0, 0], \
+Rule[StripOnInput, False], Rule[ShowSyntaxStyles, False], Rule[AutoSpacing, \
+False], Rule[ZeroWidthTimes, True]], metabolite[\\\"x2\\\", None], \
+Rule[Editable, False], Rule[Selectable, False]] \[Rule] 0\\)\\)}\\)\\)\\)\\), \
+\\(\\(Parameters \[Rule] \
+\\(\\({\\(\\(\\*InterpretationBox[\\(k\\_\\(\\*StyleBox[\\\"1\\\", \
+RGBColor[0, 0, 0], Rule[StripOnInput, False], Rule[ShowSyntaxStyles, False], \
+Rule[AutoSpacing, False], Rule[ZeroWidthTimes, \
+True]]\\)\\%\[LongRightArrow]\\), rateconst[\\\"1\\\", True], \
+Rule[Selectable, False], Rule[Editable, False]] \[Rule] 1\\)\\), \
+\\(\\(\\*InterpretationBox[\\(k\\_\\(\\*StyleBox[\\\"2\\\", RGBColor[0, 0, \
+0], Rule[StripOnInput, False], Rule[ShowSyntaxStyles, False], \
+Rule[AutoSpacing, False], Rule[ZeroWidthTimes, \
+True]]\\)\\%\[LongRightArrow]\\), rateconst[\\\"2\\\", True], \
+Rule[Selectable, False], Rule[Editable, False]] \[Rule] 0.01`\\)\\), \
+\\(\\(\\*InterpretationBox[\\(k\\_\\(\\*StyleBox[\\\"3\\\", RGBColor[0, 0, \
+0], Rule[StripOnInput, False], Rule[ShowSyntaxStyles, False], \
+Rule[AutoSpacing, False], Rule[ZeroWidthTimes, \
+True]]\\)\\%\[LongRightArrow]\\), rateconst[\\\"3\\\", True], \
+Rule[Selectable, False], Rule[Editable, False]] \[Rule] \
+0.0001`\\)\\)}\\)\\)\\)\\)\\)\\)]\\)\[NoBreak].\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.579789746585329*^9}]
+}, Open  ]]
 }, Open  ]]
 },
 AutoGeneratedPackage->None,
@@ -7782,4 +7511,85 @@ on-line help system.", "Text", FontSize -> 16,
   "9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, 2012)", 
   StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
 ]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 210, 4, 62, "Input",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[792, 28, 233, 3, 92, "Title"],
+Cell[1028, 33, 41, 0, 37, "Text"],
+Cell[CellGroupData[{
+Cell[1094, 37, 237, 7, 44, "Input",
+ InitializationCell->True],
+Cell[1334, 46, 4550, 140, 40, "Output"]
+}, Open  ]],
+Cell[5899, 189, 153, 2, 37, "Text"],
+Cell[CellGroupData[{
+Cell[6077, 195, 344, 6, 44, "Input",
+ InitializationCell->True],
+Cell[6424, 203, 110688, 2420, 403, "Output"]
+}, Open  ]],
+Cell[117127, 2626, 129, 1, 37, "Text"],
+Cell[CellGroupData[{
+Cell[117281, 2631, 147, 2, 44, "Input"],
+Cell[117431, 2635, 1235, 20, 52, "Output"]
+}, Open  ]],
+Cell[118681, 2658, 155, 2, 37, "Text"],
+Cell[CellGroupData[{
+Cell[118861, 2664, 532, 13, 79, "Input",
+ InitializationCell->True],
+Cell[119396, 2679, 6239, 178, 118, "Output"],
+Cell[125638, 2859, 15144, 414, 162, "Output"],
+Cell[140785, 3275, 107, 4, 27, "Output"]
+}, Open  ]],
+Cell[140907, 3282, 305, 8, 57, "Text"],
+Cell[CellGroupData[{
+Cell[141237, 3294, 692, 17, 96, "Input"],
+Cell[141932, 3313, 37548, 874, 197, "Output"]
+}, Open  ]],
+Cell[179495, 4190, 157, 2, 37, "Text"],
+Cell[CellGroupData[{
+Cell[179677, 4196, 137, 2, 44, "Input"],
+Cell[179817, 4200, 181, 3, 27, "Output"]
+}, Open  ]],
+Cell[180013, 4206, 242, 3, 37, "Text"],
+Cell[CellGroupData[{
+Cell[180280, 4213, 245, 5, 46, "Input"],
+Cell[180528, 4220, 1866, 60, 27, "Output"]
+}, Open  ]],
+Cell[182409, 4283, 53, 0, 37, "Text"],
+Cell[182465, 4285, 5149, 152, 75, "Input",
+ InitializationCell->True],
+Cell[187617, 4439, 203, 2, 37, "Text"],
+Cell[CellGroupData[{
+Cell[187845, 4445, 363, 10, 44, "Input",
+ InitializationCell->True],
+Cell[188211, 4457, 7694, 241, 80, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[195942, 4703, 305, 8, 44, "Input",
+ InitializationCell->True],
+Cell[196250, 4713, 101568, 1736, 260, "Output"]
+}, Open  ]],
+Cell[297833, 6452, 229, 6, 57, "Text"],
+Cell[CellGroupData[{
+Cell[298087, 6462, 5611, 145, 268, "Input"],
+Cell[303701, 6609, 3449, 70, 507, "Output"],
+Cell[307153, 6681, 2014, 33, 26, "Message"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
 
