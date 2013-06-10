@@ -1,12 +1,18 @@
 # MASS Toolbox Bootcamp
 <!--![Boocamp](http://www.beyondfitnesswithlisa.com/wp-content/uploads/2012/12/bootcamp.jpg)-->
 
+### Material covered
+* Mathematica essentials (functional programming, equations solving and manipulation, rule-based programming, ...)
+* Toolbox design principles + model construction and manipulation
+* Simulation & Visualization, IO (SBML, ...), COBRA capabilities
+* Advanced topics: enzyme module construction, symbolic capabilities, thermodynamics, ...
+
 ### Date and location
-The course will take place June 10, 1–5pm in the Zweifach in PFBH.
+The course will take place June 10, 1pm–5pm in the Zweifach library in PFBH.
 
 ### Prerequisites
 
-You'll have to bring your own laptop. If you don't have Mathematica you will to install the 30 day trial version of Mathematica before the course. Trial versions for multiple operating systems (Windows, Linux, OS X) are available [here][trial].
+You'll have to bring your own laptop. If you don't have Mathematica you will have to install the 30 day [trial version][trial] **before the course**. Trial versions for multiple operating systems (Windows, Linux, OS X) are available [here][trial].
 
 ### Download and install the MASS Toolbox
 
@@ -17,7 +23,6 @@ You'll have to bring your own laptop. If you don't have Mathematica you will to 
 5. Open a new Mathematica notebook and run ``<<Toolbox` `` to see if the installation worked (don't forget the backtick)
 
 The installation procedure will put the package into platform dependent location. You can figure out this location by evaluating `$UserBaseDirectory`.
-
 
 ### Download the bootcamp course material
 
@@ -35,11 +40,9 @@ You can share your screen using [screenleap]. Go to the [website][screenleap] an
 
 ![screenleap_button](https://raw.github.com/SBRG/Bootcamp/master/img/3kcNtee.png)
 
-Once your screen is you will be provided with a URL and a 9 digit code that you can share.
+Once your screen is you will be provided with a URL and a 9 digit code that you can share with the drill sergeant.
 
 ![screenleap_url](https://raw.github.com/SBRG/Bootcamp/master/img/BDORvAM.png)
-
-
 
 
 [trial]: http://www.wolfram.com/mathematica/trial/
