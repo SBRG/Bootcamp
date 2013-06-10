@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    348141,       7560]
-NotebookOptionsPosition[    307812,       6694]
-NotebookOutlinePosition[    346274,       7499]
-CellTagsIndexPosition[    346231,       7496]
+NotebookDataLength[    349262,       7590]
+NotebookOptionsPosition[    308726,       6718]
+NotebookOutlinePosition[    347188,       7523]
+CellTagsIndexPosition[    347145,       7520]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -185,7 +185,8 @@ Cell[BoxData[
       Toolbox`metabolite["x4", None]}, {1, 1}, False],
     Editable->False,
     Selectable->False]}], "}"}]], "Output",
- CellChangeTimes->{{3.579793637664927*^9, 3.5797936416498747`*^9}}]
+ CellChangeTimes->{{3.579793637664927*^9, 3.5797936416498747`*^9}, {
+  3.579868533368148*^9, 3.5798685355012903`*^9}}]
 }, Open  ]],
 
 Cell["Construct a model from the list of reactions", "Text",
@@ -2202,8 +2203,8 @@ Cell[BoxData[
                   "Plot function"}, {LayeredGraphPlot, GraphPlot, TreePlot}}},
                 Typeset`size$$ = Automatic, Typeset`update$$ = 0, 
                Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
-               Toolbox`p$14899$$ = 0, Toolbox`Private`method$14900$$ = False, 
-               Toolbox`Private`pltfunc$14901$$ = 0}, 
+               Toolbox`p$109408$$ = 0, Toolbox`Private`method$109409$$ = 
+               False, Toolbox`Private`pltfunc$109410$$ = 0}, 
                
                DynamicBox[Manipulate`ManipulateBoxes[
                 1, StandardForm, 
@@ -2211,13 +2212,14 @@ Cell[BoxData[
                   Toolbox`Private`method$$ = "Remove", Toolbox`p$$ = 0, 
                    Toolbox`Private`pltfunc$$ = LayeredGraphPlot}, 
                  "ControllerVariables" :> {
-                   Hold[Toolbox`p$$, Toolbox`p$14899$$, 0], 
+                   Hold[Toolbox`p$$, Toolbox`p$109408$$, 0], 
                    Hold[
-                   Toolbox`Private`method$$, Toolbox`Private`method$14900$$, 
+                   Toolbox`Private`method$$, Toolbox`Private`method$109409$$, 
                     False], 
                    Hold[
-                   Toolbox`Private`pltfunc$$, Toolbox`Private`pltfunc$14901$$,
-                     0]}, "OtherVariables" :> {
+                   Toolbox`Private`pltfunc$$, 
+                    Toolbox`Private`pltfunc$109410$$, 0]}, 
+                 "OtherVariables" :> {
                   Typeset`show$$, Typeset`bookmarkList$$, 
                    Typeset`bookmarkMode$$, Typeset`animator$$, 
                    Typeset`animvar$$, Typeset`name$$, Typeset`specs$$, 
@@ -2228,7 +2230,7 @@ Cell[BoxData[
                     Toolbox`model2bipartite[
                     
                     Toolbox`MASSmodel[{
-                    "ID" -> "MASSmodel$7", "Stoichiometry" -> 
+                    "ID" -> "MASSmodel$322", "Stoichiometry" -> 
                     SparseArray[
                     Automatic, {4, 3}, 0, {
                     1, {{0, 1, 3, 5, 6}, {{1}, {1}, {2}, {2}, {3}, {3}}}, {-1,
@@ -2245,7 +2247,7 @@ Cell[BoxData[
                     "BoundaryConditions" -> {}, "Constant" -> {}, 
                     "ReversibleColumnIndices" -> {1, 2}, 
                     "CustomRateLaws" -> {}, "CustomODE" -> {}, "Name" -> 
-                    "MASSmodel$7", 
+                    "MASSmodel$322", 
                     "ElementalComposition" -> {
                     Toolbox`metabolite["x1", None] -> "&x1&", 
                     Toolbox`metabolite["x2", None] -> "&x2&", 
@@ -2576,7 +2578,7 @@ Cell[BoxData[
           Toolbox`model2bipartite[
            
            Toolbox`MASSmodel[{
-            "ID" -> "MASSmodel$7", "Stoichiometry" -> 
+            "ID" -> "MASSmodel$322", "Stoichiometry" -> 
              SparseArray[
               Automatic, {4, 3}, 0, {
                1, {{0, 1, 3, 5, 6}, {{1}, {1}, {2}, {2}, {3}, {3}}}, {-1, 
@@ -2592,7 +2594,7 @@ Cell[BoxData[
              "Parameters" -> {}, "GPR" -> {}, "BoundaryConditions" -> {}, 
              "Constant" -> {}, "ReversibleColumnIndices" -> {1, 2}, 
              "CustomRateLaws" -> {}, "CustomODE" -> {}, "Name" -> 
-             "MASSmodel$7", 
+             "MASSmodel$322", 
              "ElementalComposition" -> {
               Toolbox`metabolite["x1", None] -> "&x1&", 
                Toolbox`metabolite["x2", None] -> "&x2&", 
@@ -2622,7 +2624,8 @@ Cell[BoxData[
         Scrollbars -> {True, True}]}, ImageSize -> {{800}, {450}}]],
    DynamicModuleValues:>{}],
   Setting[#, {0}]& ]], "Output",
- CellChangeTimes->{{3.579793639483757*^9, 3.579793641752082*^9}}]
+ CellChangeTimes->{{3.579793639483757*^9, 3.579793641752082*^9}, {
+  3.579868533489349*^9, 3.5798685356638412`*^9}}]
 }, Open  ]],
 
 Cell["Obtain a list of all available model attributes", "Text",
@@ -2655,7 +2658,7 @@ Cell[BoxData[
    ",", "\<\"Proteins\"\>", ",", "\<\"GeneAssociations\"\>", 
    ",", "\<\"ProteinAssociations\"\>", ",", "\<\"Enzymes\"\>"}], 
   "}"}]], "Output",
- CellChangeTimes->{3.579793641782745*^9}]
+ CellChangeTimes->{3.579793641782745*^9, 3.579868535784267*^9}]
 }, Open  ]],
 
 Cell["Introspect a few model attributes in more detail", "Text",
@@ -2858,7 +2861,8 @@ Cell[BoxData[
    Column],
   Function[BoxForm`e$, 
    TableForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{{3.579793639595436*^9, 3.579793641817726*^9}}],
+ CellChangeTimes->{{3.579793639595436*^9, 3.579793641817726*^9}, {
+  3.5798685335323877`*^9, 3.579868536146265*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -3275,14 +3279,16 @@ Cell[BoxData[
    Column],
   Function[BoxForm`e$, 
    TableForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{{3.579793639595436*^9, 3.5797936418206453`*^9}}],
+ CellChangeTimes->{{3.579793639595436*^9, 3.579793641817726*^9}, {
+  3.5798685335323877`*^9, 3.579868536149478*^9}}],
 
 Cell[BoxData[
  TagBox[
   RowBox[{"{", "}"}],
   Function[BoxForm`e$, 
    TableForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{{3.579793639595436*^9, 3.579793641821972*^9}}]
+ CellChangeTimes->{{3.579793639595436*^9, 3.579793641817726*^9}, {
+  3.5798685335323877`*^9, 3.5798685361511097`*^9}}]
 }, Open  ]],
 
 Cell[TextData[{
@@ -4192,7 +4198,7 @@ Cell[BoxData[
         Toolbox`metabolite["x4", None]}]}]],
    DynamicModuleValues:>{}],
   Setting[#, {0}]& ]], "Output",
- CellChangeTimes->{3.579793641859274*^9}]
+ CellChangeTimes->{3.579793641859274*^9, 3.5798685366560497`*^9}]
 }, Open  ]],
 
 Cell["The right nullspace is empty", "Text",
@@ -4209,7 +4215,7 @@ Cell[BoxData[
  RowBox[{"{", "}"}]], "Output",
  CellChangeTimes->{{3.573136295438575*^9, 3.573136312912871*^9}, 
    3.573148448599195*^9, 3.573149773029471*^9, 3.573151633431068*^9, 
-   3.579793641895989*^9}]
+   3.579793641895989*^9, 3.579868537294709*^9}]
 }, Open  ]],
 
 Cell["The left nullspace indicates one conservation relation", "Text",
@@ -4286,7 +4292,8 @@ Cell[BoxData[
     Editable->False,
     Selectable->False]}], "}"}]], "Output",
  CellChangeTimes->{3.573136367719411*^9, 3.573148448698545*^9, 
-  3.5731497739686737`*^9, 3.573151633468074*^9, 3.579793641933372*^9}]
+  3.5731497739686737`*^9, 3.573151633468074*^9, 3.579793641933372*^9, 
+  3.579868537750108*^9}]
 }, Open  ]],
 
 Cell["Set parameters and initial conditions", "Text"],
@@ -4705,7 +4712,8 @@ Cell[BoxData[
            ",", "\<\"<>\"\>"}], "]"}],
          False,
          Editable->False], "[", "t", "]"}]}]}]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{{3.579793639712097*^9, 3.5797936420226383`*^9}}]
+ CellChangeTimes->{{3.579793639712097*^9, 3.5797936420226383`*^9}, {
+  3.579868533664772*^9, 3.5798685387500353`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -6457,7 +6465,8 @@ otRjzmFr3yknBAIVGP6DgwLde/v+//8F4S3Ovf/z/wBxX9/V
        Thickness[0.001]}}, {13.698976741708323`, 
       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
        Thickness[0.001]}}}, Automatic}]], "Output",
- CellChangeTimes->{{3.579793639997521*^9, 3.5797936423015842`*^9}}]
+ CellChangeTimes->{{3.579793639997521*^9, 3.5797936423015842`*^9}, {
+  3.579868533968193*^9, 3.5798685395120783`*^9}}]
 }, Open  ]],
 
 Cell[TextData[{
@@ -6633,23 +6642,23 @@ Cell[BoxData[
        Hold[$CellContext`p4$$], 0.0001, 
        Toolbox`rateconst["3", True]}, 0, 0.001}}, Typeset`size$$ = {
     712., {170., 176.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`p2$15305$$ = 
-    0, $CellContext`p3$15306$$ = 0, $CellContext`p4$15307$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`p2$110657$$ = 
+    0, $CellContext`p3$110658$$ = 0, $CellContext`p4$110659$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {
        Toolbox`p$$ = {1, 0}, $CellContext`p2$$ = 1, $CellContext`p3$$ = 
         0.01, $CellContext`p4$$ = 0.0001}, "ControllerVariables" :> {
-        Hold[$CellContext`p2$$, $CellContext`p2$15305$$, 0], 
-        Hold[$CellContext`p3$$, $CellContext`p3$15306$$, 0], 
-        Hold[$CellContext`p4$$, $CellContext`p4$15307$$, 0]}, 
+        Hold[$CellContext`p2$$, $CellContext`p2$110657$$, 0], 
+        Hold[$CellContext`p3$$, $CellContext`p3$110658$$, 0], 
+        Hold[$CellContext`p4$$, $CellContext`p4$110659$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, 
-      "Body" :> ({$CellContext`concProfile$15304, \
-$CellContext`fluxProfile$15304} = 
+      "Body" :> ({$CellContext`concProfile$110656, \
+$CellContext`fluxProfile$110656} = 
         Toolbox`simulate[$CellContext`simpleModel, {
           Toolbox`t, 0, 10000000000}, 
           Toolbox`InitialConditions -> {
@@ -6660,7 +6669,7 @@ $CellContext`fluxProfile$15304} =
             Toolbox`k["2"] -> $CellContext`p3$$, 
             Toolbox`k["3"] -> $CellContext`p4$$}]; Row[{
           Toolbox`plotPhasePortrait[
-           FilterRules[$CellContext`concProfile$15304, {
+           FilterRules[$CellContext`concProfile$110656, {
              Toolbox`m["x1"], 
              Toolbox`m["x2"]}], 
            Mesh -> {10^{-3, -2, -1, 0, 1, 2, 3, 4, 5, 6}}, MeshStyle -> 
@@ -6668,7 +6677,7 @@ $CellContext`fluxProfile$15304} =
              PointSize[0.03]], PlotRange -> {{0, 1}, {0, 1}}, PlotPoints -> 
            500], "  ", 
           
-          Toolbox`plotSimulation[$CellContext`concProfile$15304, 
+          Toolbox`plotSimulation[$CellContext`concProfile$110656, 
            Toolbox`PlotFunction -> LogLinearPlot, 
            FrameLabel -> {"t", "Concentration"}, Toolbox`Tooltipped -> 
            False]}]), 
@@ -6688,8 +6697,23 @@ $CellContext`fluxProfile$15304} =
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.579793642377013*^9}]
-}, Closed]]
+ CellChangeTimes->{3.579793642377013*^9, 3.579868540966683*^9}]
+}, {2}]],
+
+Cell[CellGroupData[{
+
+Cell["Excercises", "Exercise"],
+
+Cell[BoxData["simpleModel"], "Input",
+ CellChangeTimes->{{3.5798685762676*^9, 3.579868577674828*^9}}],
+
+Cell["1. ", "Subexercise",
+ CellChangeTimes->{{3.579791020090124*^9, 3.579791026837667*^9}, {
+  3.5798685625682793`*^9, 3.579868563375465*^9}}],
+
+Cell["2. Import another SBML model of your choice and analyze it", \
+"Subexercise"]
+}, Open  ]]
 }, Open  ]]
 },
 AutoGeneratedPackage->None,
@@ -7506,64 +7530,71 @@ Cell[1028, 33, 41, 0, 37, "Text"],
 Cell[CellGroupData[{
 Cell[1094, 37, 237, 7, 44, "Input",
  InitializationCell->True],
-Cell[1334, 46, 4618, 141, 40, "Output"]
+Cell[1334, 46, 4669, 142, 40, "Output"]
 }, Open  ]],
-Cell[5967, 190, 153, 2, 37, "Text"],
+Cell[6018, 191, 153, 2, 37, "Text"],
 Cell[CellGroupData[{
-Cell[6145, 196, 344, 6, 44, "Input",
+Cell[6196, 197, 344, 6, 44, "Input",
  InitializationCell->True],
-Cell[6492, 204, 110732, 2420, 403, "Output"]
+Cell[6543, 205, 110815, 2422, 403, "Output"]
 }, Open  ]],
-Cell[117239, 2627, 129, 1, 37, "Text"],
+Cell[117373, 2630, 129, 1, 37, "Text"],
 Cell[CellGroupData[{
-Cell[117393, 2632, 147, 2, 44, "Input"],
-Cell[117543, 2636, 1277, 21, 52, "Output"]
+Cell[117527, 2635, 147, 2, 44, "Input"],
+Cell[117677, 2639, 1299, 21, 52, "Output"]
 }, Open  ]],
-Cell[118835, 2660, 155, 2, 37, "Text"],
+Cell[118991, 2663, 155, 2, 37, "Text"],
 Cell[CellGroupData[{
-Cell[119015, 2666, 532, 13, 79, "Input",
+Cell[119171, 2669, 532, 13, 79, "Input",
  InitializationCell->True],
-Cell[119550, 2681, 6305, 179, 129, "Output"],
-Cell[125858, 2862, 15212, 415, 173, "Output"],
-Cell[141073, 3279, 173, 5, 38, "Output"]
+Cell[119706, 2684, 6356, 180, 129, "Output"],
+Cell[126065, 2866, 15261, 416, 173, "Output"],
+Cell[141329, 3284, 226, 6, 38, "Output"]
 }, Open  ]],
-Cell[141261, 3287, 305, 8, 57, "Text"],
+Cell[141570, 3293, 305, 8, 57, "Text"],
 Cell[CellGroupData[{
-Cell[141591, 3299, 692, 17, 96, "Input"],
-Cell[142286, 3318, 37602, 876, 197, "Output"]
+Cell[141900, 3305, 692, 17, 96, "Input"],
+Cell[142595, 3324, 37626, 876, 197, "Output"]
 }, Open  ]],
-Cell[179903, 4197, 157, 2, 37, "Text"],
+Cell[180236, 4203, 157, 2, 37, "Text"],
 Cell[CellGroupData[{
-Cell[180085, 4203, 137, 2, 44, "Input"],
-Cell[180225, 4207, 207, 4, 27, "Output"]
+Cell[180418, 4209, 137, 2, 44, "Input"],
+Cell[180558, 4213, 229, 4, 27, "Output"]
 }, Open  ]],
-Cell[180447, 4214, 242, 3, 37, "Text"],
+Cell[180802, 4220, 242, 3, 37, "Text"],
 Cell[CellGroupData[{
-Cell[180714, 4221, 245, 5, 46, "Input"],
-Cell[180962, 4228, 1888, 60, 27, "Output"]
+Cell[181069, 4227, 245, 5, 46, "Input"],
+Cell[181317, 4234, 1913, 61, 27, "Output"]
 }, Open  ]],
-Cell[182865, 4291, 53, 0, 37, "Text"],
-Cell[182921, 4293, 5149, 152, 75, "Input",
+Cell[183245, 4298, 53, 0, 37, "Text"],
+Cell[183301, 4300, 5149, 152, 75, "Input",
  InitializationCell->True],
-Cell[188073, 4447, 203, 2, 37, "Text"],
+Cell[188453, 4454, 203, 2, 37, "Text"],
 Cell[CellGroupData[{
-Cell[188301, 4453, 363, 10, 44, "Input",
+Cell[188681, 4460, 363, 10, 44, "Input",
  InitializationCell->True],
-Cell[188667, 4465, 7762, 242, 80, "Output"]
+Cell[189047, 4472, 7813, 243, 80, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[196466, 4712, 305, 8, 44, "Input",
+Cell[196897, 4720, 305, 8, 44, "Input",
  InitializationCell->True],
-Cell[196774, 4722, 101636, 1737, 260, "Output"]
+Cell[197205, 4730, 101687, 1738, 260, "Output"]
 }, Open  ]],
-Cell[298425, 6462, 229, 6, 57, "Text"],
+Cell[298907, 6471, 229, 6, 57, "Text"],
 Cell[CellGroupData[{
-Cell[298679, 6472, 5611, 145, 268, "Input"],
-Cell[304293, 6619, 3491, 71, 507, "Output"]
-}, Closed]]
+Cell[299161, 6481, 5611, 145, 268, "Input"],
+Cell[304775, 6628, 3523, 71, 507, "Output"]
+}, {2}]],
+Cell[CellGroupData[{
+Cell[308332, 6704, 30, 0, 81, "Exercise"],
+Cell[308365, 6706, 101, 1, 44, "Input"],
+Cell[308469, 6709, 143, 2, 46, "Subexercise"],
+Cell[308615, 6713, 83, 1, 38, "Subexercise"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
+
