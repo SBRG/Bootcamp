@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[    268377,       6436]
-NotebookOptionsPosition[    222636,       5386]
-NotebookOutlinePosition[    260863,       6182]
-CellTagsIndexPosition[    260820,       6179]
+NotebookDataLength[    267943,       6419]
+NotebookOptionsPosition[    222371,       5374]
+NotebookOutlinePosition[    260598,       6170]
+CellTagsIndexPosition[    260555,       6167]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2465,7 +2465,7 @@ Cell[BoxData[
   Selectable->False]], "Input",
  Evaluatable->False]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -3656,7 +3656,7 @@ Cell[BoxData[
  Evaluatable->False,
  CellChangeTimes->{{3.579800339660986*^9, 3.5798003453312197`*^9}}]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -3705,7 +3705,7 @@ Cell[BoxData[
   Selectable->False]], "Output",
  CellChangeTimes->{{3.579800541270059*^9, 3.579800549515016*^9}}]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -4004,7 +4004,7 @@ Cell[BoxData[
   FullForm]], "Output"]
 }, Open  ]]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -4331,7 +4331,7 @@ Cell[BoxData[
   RowBox[{"\<\"compartment1\"\>", ",", "\<\"compartment2\"\>"}], 
   "}"}]], "Output"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -4444,7 +4444,7 @@ Cell[BoxData[
 Cell[BoxData["\<\"Translocation: atp[compartment1] <=> \
 atp[compartment2]\"\>"], "Output"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -4622,7 +4622,7 @@ Cell[BoxData[
 Cell["\<\
 See ???.nb for a detailed introduction into enzymes and regulatory modules\
 \>", "Text"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -5300,7 +5300,7 @@ Cell[BoxData[
   Ticks->Automatic,
   TicksStyle->{}]], "Output"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -5368,20 +5368,8 @@ Cell[BoxData[
 Cell[BoxData["\<\"Mg+ & ATP\"\>"], "Output",
  CellChangeTimes->{3.579793039667618*^9}]
 }, Open  ]]
-}, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Excercises", "Exercise"],
-
-Cell["\<\
-1. Use the function FilterRules to plot a subset of the concentration profiles\
-\>", "Subexercise"],
-
-Cell["2. Import another SBML model of your choice and analyze it", \
-"Subexercise"]
-}, Open  ]]
+}, Closed]]
+}, Closed]]
 }, Open  ]]
 },
 WindowSize->{1440, 852},
@@ -6245,9 +6233,9 @@ Cell[132302, 2434, 166, 3, 35, "Subsubexercise"],
 Cell[132471, 2439, 771, 26, 47, "Input",
  Evaluatable->False]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[133291, 2471, 94, 1, 76, "Section"],
+Cell[133291, 2471, 94, 1, 46, "Section"],
 Cell[133388, 2474, 345, 9, 37, "Text"],
 Cell[CellGroupData[{
 Cell[133758, 2487, 849, 22, 44, "Input"],
@@ -6285,17 +6273,17 @@ Cell[171227, 3644, 312, 6, 35, "Subsubexercise"],
 Cell[171542, 3652, 194, 4, 44, "Input",
  Evaluatable->False]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[171785, 3662, 25, 0, 76, "Section"],
+Cell[171785, 3662, 25, 0, 46, "Section"],
 Cell[171813, 3664, 236, 7, 37, "Text"],
 Cell[CellGroupData[{
 Cell[172074, 3675, 133, 2, 44, "Input"],
 Cell[172210, 3679, 803, 26, 30, "Output"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[173062, 3711, 94, 1, 76, "Section"],
+Cell[173062, 3711, 94, 1, 46, "Section"],
 Cell[CellGroupData[{
 Cell[173181, 3716, 116, 1, 35, "Subsubsection"],
 Cell[CellGroupData[{
@@ -6344,9 +6332,9 @@ Cell[179953, 3967, 818, 26, 62, "Input"],
 Cell[180774, 3995, 234, 8, 27, "Output"]
 }, Open  ]]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[181069, 4010, 154, 2, 76, "Section"],
+Cell[181069, 4010, 154, 2, 46, "Section"],
 Cell[181226, 4014, 869, 31, 57, "Text"],
 Cell[CellGroupData[{
 Cell[182120, 4049, 2969, 93, 124, "Input"],
@@ -6360,9 +6348,9 @@ Cell[190895, 4324, 31, 0, 27, "Output"],
 Cell[190929, 4326, 36, 0, 27, "Output"],
 Cell[190968, 4328, 114, 3, 27, "Output"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[191131, 4337, 41, 0, 76, "Section"],
+Cell[191131, 4337, 41, 0, 46, "Section"],
 Cell[191175, 4339, 238, 6, 57, "Text"],
 Cell[CellGroupData[{
 Cell[191438, 4349, 488, 16, 61, "Input"],
@@ -6372,9 +6360,9 @@ Cell[CellGroupData[{
 Cell[192009, 4372, 2354, 69, 65, "Input"],
 Cell[194366, 4443, 91, 1, 27, "Output"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[194506, 4450, 38, 0, 76, "Section"],
+Cell[194506, 4450, 38, 0, 46, "Section"],
 Cell[CellGroupData[{
 Cell[194569, 4454, 29, 0, 44, "Subsection"],
 Cell[CellGroupData[{
@@ -6388,9 +6376,9 @@ Cell[197201, 4540, 1331, 38, 45, "Output"],
 Cell[198535, 4580, 1382, 38, 42, "Output"]
 }, Open  ]],
 Cell[199932, 4621, 98, 2, 57, "Text"]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[200067, 4628, 51, 0, 44, "Subsection"],
+Cell[200067, 4628, 51, 0, 36, "Subsection"],
 Cell[CellGroupData[{
 Cell[200143, 4632, 69, 1, 44, "Input"],
 Cell[200215, 4635, 285, 11, 38, "Output"]
@@ -6412,9 +6400,9 @@ Cell[CellGroupData[{
 Cell[211625, 5025, 67, 1, 44, "Input"],
 Cell[211695, 5028, 8681, 272, 315, "Output"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[220425, 5306, 95, 1, 44, "Subsection"],
+Cell[220425, 5306, 95, 1, 36, "Subsection"],
 Cell[CellGroupData[{
 Cell[220545, 5311, 259, 6, 44, "Input"],
 Cell[220807, 5319, 1256, 39, 34, "Output"]
@@ -6423,13 +6411,8 @@ Cell[CellGroupData[{
 Cell[222100, 5363, 130, 2, 44, "Input"],
 Cell[222233, 5367, 86, 1, 27, "Output"]
 }, Open  ]]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[222380, 5375, 30, 0, 81, "Exercise"],
-Cell[222413, 5377, 109, 2, 46, "Subexercise"],
-Cell[222525, 5381, 83, 1, 38, "Subexercise"]
-}, Open  ]]
+}, Closed]]
+}, Closed]]
 }, Open  ]]
 }
 ]
