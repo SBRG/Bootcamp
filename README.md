@@ -40,7 +40,7 @@ You can share your screen using [screenleap]. Go to the [website][screenleap] an
 
 ![screenleap_button](https://raw.github.com/SBRG/Bootcamp/master/img/3kcNtee.png)
 
-Once your screen is you will be provided with a URL and a 9 digit code that you can share with the drill sergeant.
+Once your screen is available you will be provided with a URL and a 9 digit code that you can share with the drill sergeant.
 
 ![screenleap_url](https://raw.github.com/SBRG/Bootcamp/master/img/BDORvAM.png)
 
