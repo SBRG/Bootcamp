@@ -26,7 +26,7 @@ The installation procedure will put the package into platform dependent location
 
 ### Download the bootcamp course material
 
-Go to the top of the repository page and press the ZIP button to download a a ZIP file of the course content. Unpack it 
+Go to the top of the repository page and press the ZIP button to download a a ZIP file of the course content. Unpack it. 
 ![ZIP](https://raw.github.com/SBRG/Bootcamp/master/img/5NGgDAn.png)
 
 You can also clone it to your favorite location
