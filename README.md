@@ -37,4 +37,4 @@ if you are familiar with [git].
 
 [trial]: http://www.wolfram.com/mathematica/trial/
 [git]: http://git-scm.com/
-[toolbox]: https://www.amazon.com/clouddrive/share?s=UVU1VIH4Qx4u9ym8sWOe8o
+[toolbox]: https://github.com/SBRG/MASS-Toolbox/releases
